@@ -1,0 +1,263 @@
+<!-- Personal Website -->
+
+<%- include ("header.ejs") %>
+
+
+<body >
+    
+  <div class="title">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#"> -->
+          <img src="images/logo.png" width="50" height="50" alt="">
+        <!-- </a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                
+            
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#introduction">Introduction</a></li>
+                <li><a class="dropdown-item" href="#education">Education</a></li>
+                <li><a class="dropdown-item" href="#testimonials">Certificates</a></li> 
+              </ul>
+
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#footer">Contact</a>
+            </li>
+
+            
+              
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  
+  <p id="MyClockDisplay" class="clock" onload="showTime()">
+    <script> document.write(new Date().toLocaleDateString()); 
+    
+    
+        function showTime(){
+var date = new Date();
+var h = date.getHours(); // 0 - 23
+var m = date.getMinutes(); // 0 - 59
+var s = date.getSeconds(); // 0 - 59
+var session = "AM";
+
+if(h == 0){
+h = 12;
+}
+
+if(h > 12){
+h = h - 12;
+session = "PM";
+}
+
+h = (h < 10) ? "0" + h : h;
+m = (m < 10) ? "0" + m : m;
+s = (s < 10) ? "0" + s : s;
+
+var time = h + ":" + m + ":" + s + " " + session;
+document.getElementById("MyClockDisplay").innerText = time;
+document.getElementById("MyClockDisplay").textContent = time;
+
+setTimeout(showTime, 1000);
+
+}
+
+showTime();
+    </script>
+    </p>
+  </div>
+<div class="top-image">
+  <img src="images/wd.png" width="100%" height="700px">
+</div>
+
+<hr>
+
+<!-- Certificate Section -->
+
+<section id="testimonials">
+  <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        
+        <img class="testimonial-image" src="images/1.png" alt="certificate">
+        
+      </div>
+      <div class="carousel-item">
+        
+        <img class="testimonial-image" src="images/FS_UDEMY.jpg" alt="certificate">
+        
+            </div>
+      <div class="carousel-item">
+        
+  <img class="testimonial-image" src="images/2.png" alt="certificate">
+  
+      </div>
+      <div class="carousel-item">
+        
+      <img class="testimonial-image" src="images/3.png" alt="certificate">
+      
+          </div>
+          <div class="carousel-item">
+        
+  <img class="testimonial-image" src="images/4.png" alt="certificate">
+  
+      </div>
+
+      <div class="carousel-item">
+        
+        <img class="testimonial-image5" src="images/5.png" alt="certificate">
+        
+            </div>
+            
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+     
+    </button>
+  </div>
+
+</section>
+
+<hr>
+
+
+
+<!-- Introduction Section -->
+<section id="introduction">
+  <div class="row">
+    <div class="introduction-box col-lg-6">
+      <img class="profile-img" src="images/profilepic1.jpg" alt="profile-img">
+    </div>
+  <div class="introduction-box col-lg-6">
+  
+  <p>A self-made developer seeking to pursue a long-term career change in IT. 
+    Offers a 10 years track record as a Skilled Computer Instructor familiar with multiple programming languages
+    and real-world applications. Skilled team player with strong background in high paced working environments.
+    Quick learner with good computer abilities, able to handle assignments and always ready to go beyond basics.</p>
+</div>
+</div>
+</section>
+
+
+<hr>    
+
+<!-- Skills Section -->
+
+
+
+
+<section id="skills">
+  <div class="row">
+    <div class="introduction-box col-lg-6">
+  <h1>SKILLS</h1>
+      
+          <p>In-depth experience applying HTML, CSS, JavaScript, Bootstrap, jQuery, NodeJS, MongoDB principles to produce innovative and tastefully created webpages.</p>
+        <p>Intrinsic creative talent and lifelong interest in logical problem solving; offers a keen eye for error correction</p>
+        <p>Working experience with GitHub, Gitlab & Visual Studio</p>
+        
+        
+    </div>
+    <div class="introduction-box col-lg-6">
+      <img class="skill-img" src="images/skill1.png" alt="skill-img">
+    </div>
+  
+</div>
+</section>
+
+<hr>
+
+<!-- Experience Section -->
+
+<section id="experience">
+  <div class="row">
+    <div class="introduction-box col-lg-6">
+      <img class="experience-img" src="images/exp.png" alt="experience-img">
+      <h1>EXPERIENCE</h1>
+    </div>
+  <div class="introduction-box col-lg-6">
+  
+  <p>
+    
+    <h5>Full Stack Web Developer Internship, <a href="https://solarsecuresolutions.in/" class=school>Solar Secure Solutions</a>, June 2022- July 2022, India</h5>
+   <h6> •	Work on Web Designing using HTML, CSS, JS, Bootstrap, jQuery, NodeJS & ReactJS. </h6>
+    
+   <h5>Computer Science Instructor, <a href="https://www.malpi.edu.np/" class="school">Malpi International School</a>, Apr 2019 ‐ Apr 2022</h5>
+   <h6> •	Instructed pupils using different programming languages & using those languages to create projects.</h6>
+   <h6>•	Contemporary knowledge of emerging technologies and novel teaching techniques to improve student outcomes.</h6>
+    <h6>•	Responsible for maintaining records, collected data, and completed reports.</h6>
+    
+    <h5>Computer Science Teacher, <a href="http://spsdgp.com/" class="school">St. Peters School</a> , Jun 2010‐ Jul 2018, India</h5>
+    <h6>•	Instructed pupils using different programming languages.</h6>
+    <h6>•	Brought in guest speakers, demonstrated technology, and implemented other activities to interest students in computer science and engineering fields.</h6>
+    <h6>•	Discovered and learned new programming languages and technologies to share with students.</h6>
+    <h6>•	Responsible for maintaining records, collected data, and completed reports.</h6>
+    </p>
+</div>
+</div>
+</section>
+       
+<hr>
+        <!-- Education Section -->
+
+        <section id="education">
+          <div class="row">
+            <div class="education-box col-lg-12">
+              <img class="degree-img" src="images/degree.png" alt="degree-img">
+              <h1>EDUCATION</h1>
+            </div>
+          <div class="education-box col-lg-12">
+            
+            <h3> Master of Computer Applications</h3>
+            <h4>Dr. B.C.Roy Engineering College, Durgapur, West Bengal</h4>
+            <h3> Bachelor of Science</h3>
+            <h4>City College (University of Calcutta), West Bengal</h4>
+          </div>
+        </div>
+        </section>
+
+        <hr>
+
+        
+      <!-- Footer -->
+
+  <footer id="footer">
+    <div>
+    <h5>Email ID: avijitbhowmick22@gmail.com</h5>
+          <h5>Mobile:9051572457</h5>
+        </div>
+    <a class="footer-link" href="https://www.facebook.com/avijit.bhowmick.98"><i class="social-icon fa-brands fa-facebook"></i></a>
+    <a class="footer-link" href="https://www.linkedin.com/in/avijit-bhowmick-bbb2aa24/"><i class="fa-brands fa-linkedin"></i></i>
+    <a href="mailto:avijitbhowmick22@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
+    <a class="footer-link" href="https://github.com/AviDebati?tab=repositories"><i class="fa-brands fa-github"></i></a>
+    
+    <p class="copyright">© Copyright <img src="images/logo.png" width="40" height="40" alt=""> -The Developer</p>
+
+  </footer>
+      
+</body>
+</html>
